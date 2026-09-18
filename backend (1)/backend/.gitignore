@@ -18,7 +18,11 @@ target/
 *.iws
 *.iml
 *.ipr
-
+target/
+.mvn/wrapper/maven-wrapper.jar
+application-local.properties
+*.properties.local
+.env
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
