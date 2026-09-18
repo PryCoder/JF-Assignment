@@ -14,8 +14,10 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @SpringBootApplication
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
-public class App {
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://jf-assignment.vercel.app"
+})public class App {
     public static void main(String[] a) { SpringApplication.run(App.class, a); }
 
     @Autowired UserRepo users;
